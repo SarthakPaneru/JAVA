@@ -3,8 +3,8 @@ package Pizza;
 public class StandardPizza extends Pizza {
     //private int price;
 
-    StandardPizza(int total, int noOfToppings) {
-        super(total, 100, noOfToppings);
+    StandardPizza(int total) {
+        super(total, 100);
     }
 
     void getTotal(int total) {

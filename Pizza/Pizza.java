@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class Pizza {
     protected int total;
     private int price;
-    protected int noOfToppings;
+    //protected int noOfToppings;
 
-    Pizza(int total, int price, int noOfToppings) {
+    Pizza(int total, int price) {
         this.total = total;
         this.price = price;
-        this.noOfToppings = noOfToppings;
+        //this.noOfToppings = noOfToppings;
     }
 
     Pizza() {
@@ -22,7 +22,7 @@ public class Pizza {
     }
 
     int getPrice() {
-        return (total*this.price + noOfToppings*20);
+        return (total*this.price);
     }
 
     public static void main(String[] args) {
@@ -34,9 +34,7 @@ public class Pizza {
         switch (choice) {
             case 1:
             {
-                System.out.println("Do you want to add extra toppings(only upto 3)? If yes specifyor press 0 to ignore: ");
-                int x = s.nextInt();
-                StandardPizza stdP = new StandardPizza(6, x);
+                StandardPizza stdP = new StandardPizza(6);
                 System.out.println(stdP.getPrice());
                 break;
             }
