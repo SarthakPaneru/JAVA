@@ -5,20 +5,14 @@ import java.util.Scanner;
 public class Pizza {
     protected int total;
     private int price;
-    //protected int noOfToppings;
 
     Pizza(int total, int price) {
         this.total = total;
         this.price = price;
-        //this.noOfToppings = noOfToppings;
     }
 
     Pizza() {
 
-    }
-
-    void getTotal() {
-        //return 0;
     }
 
     int getPrice() {
@@ -39,7 +33,7 @@ public class Pizza {
                 break;
             }
             case 2:
-                System.out.println("Do you want to add extra toppings(only upto 3)? If yes specifyor press 0 to ignore: ");
+                System.out.println("Do you want to add extra toppings(only upto 3)? If yes specify or press 0 to ignore: ");
                 int x = s.nextInt();
                 DeluxePizza dlxP = new DeluxePizza(7, x);
                 System.out.println(dlxP.getPrice());
