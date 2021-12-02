@@ -6,7 +6,8 @@ public class StandardPizza extends Pizza {
         super(total, 100);
     }
 
-    void getTotal(int total) {
-        this.total += total;
+    StandardPizza() {
+        this(0);
     }
+
 }
